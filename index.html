@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 EduAI: Your Instant Learning Companion</h1>
+            <p>Paste your complex notes or topic below to get a smart summary and a quick quiz!</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="userInput" placeholder="Enter your study topic, raw notes, or paragraphs here..."></textarea>
+                <button id="generateBtn" onclick="generateStudyMaterial()">Generate Study Magic ✨</button>
+            </div>
+
+            <div id="loading" class="hidden">Generating your customized learning kit... Please wait...</div>
+
+            <div id="outputSection" class="hidden">
+                <div class="card summary-box">
+                    <h2>📝 Smart Summary</h2>
+                    <p id="summaryText"></p>
+                </div>
+
+                <div class="card quiz-box">
+                    <h2>❓ Quick Practice Quiz</h2>
+                    <div id="quizContainer"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
